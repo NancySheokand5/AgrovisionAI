@@ -1,0 +1,458 @@
+{
+  "source": "FAO Irrigation and Drainage Paper No. 56 (Crop Evapotranspiration - Guidelines for Computing Crop Water Requirements)",
+  "reference_table": "FAO-56 Table 12: Single (time-averaged) crop coefficients, Kc, and mean maximum plant heights for non-stressed, well-managed crops in subhumid climates",
+  "methodology": "Kc values represent ratio of crop evapotranspiration (ETc) to reference evapotranspiration (ET0) under standard conditions. Stage-specific adjustments follow FAO-56 dual and single crop coefficient procedures.",
+  "crops": {
+    "wheat": {
+      "id": "wheat",
+      "name": "Wheat",
+      "hindi_name": "गेहूं",
+      "emoji": "🌾",
+      "stages": {
+        "initial": {
+          "label": "Sowing / Establishment",
+          "kc": 0.40,
+          "duration_days": 20,
+          "description": "Germination to early vegetative cover; low transpiration, dominated by soil evaporation."
+        },
+        "vegetative": {
+          "label": "Vegetative / Tillering",
+          "kc": 0.75,
+          "duration_days": 35,
+          "description": "Rapid canopy expansion, active root elongation, and tiller development."
+        },
+        "flowering": {
+          "label": "Flowering / Heading",
+          "kc": 1.15,
+          "duration_days": 30,
+          "description": "Peak water demand; moisture stress at this stage severely curtails grain set."
+        },
+        "fruiting": {
+          "label": "Fruiting / Grain Filling",
+          "kc": 1.10,
+          "duration_days": 30,
+          "description": "Milking and dough stage; consistent water supply ensures plump grains."
+        },
+        "maturity": {
+          "label": "Ripening / Maturity",
+          "kc": 0.35,
+          "duration_days": 15,
+          "description": "Senescence and dry-down; irrigation should cease 10-14 days prior to harvest."
+        }
+      },
+      "root_depth_m": 1.2,
+      "depletion_fraction_p": 0.55,
+      "yield_response_ky": 1.15
+    },
+    "paddy": {
+      "id": "paddy",
+      "name": "Paddy (Rice)",
+      "hindi_name": "धान / चावल",
+      "emoji": "🌾",
+      "stages": {
+        "initial": {
+          "label": "Transplanting / Establishment",
+          "kc": 1.05,
+          "duration_days": 20,
+          "description": "Submerged ponding or high saturation; high evaporation from standing water."
+        },
+        "vegetative": {
+          "label": "Active Tillering",
+          "kc": 1.10,
+          "duration_days": 35,
+          "description": "Tillering and panicle development; requires continuous shallow water layer."
+        },
+        "flowering": {
+          "label": "Flowering / Panicle Initiation",
+          "kc": 1.20,
+          "duration_days": 30,
+          "description": "Critical reproductive window; most sensitive to moisture deficit."
+        },
+        "fruiting": {
+          "label": "Grain Filling / Milking",
+          "kc": 1.15,
+          "duration_days": 25,
+          "description": "Nutrient accumulation into kernel; maintain saturated soil."
+        },
+        "maturity": {
+          "label": "Maturity / Ripening",
+          "kc": 0.85,
+          "duration_days": 20,
+          "description": "Drain fields 10-12 days before harvest to facilitate mechanical cutting."
+        }
+      },
+      "root_depth_m": 0.6,
+      "depletion_fraction_p": 0.20,
+      "yield_response_ky": 1.20
+    },
+    "soybean": {
+      "id": "soybean",
+      "name": "Soybean",
+      "hindi_name": "सोयाबीन",
+      "emoji": "🌱",
+      "stages": {
+        "initial": {
+          "label": "Sowing / Emergence",
+          "kc": 0.40,
+          "duration_days": 20,
+          "description": "Cotyledon emergence to unifoliate leaf unfolding."
+        },
+        "vegetative": {
+          "label": "Vegetative Branching",
+          "kc": 0.70,
+          "duration_days": 30,
+          "description": "Trifoliate leaves unfolding and nodulation initiation."
+        },
+        "flowering": {
+          "label": "Flowering / Pod Initiation",
+          "kc": 1.15,
+          "duration_days": 30,
+          "description": "Peak water consumption; critical stage for flower retention and pod count."
+        },
+        "fruiting": {
+          "label": "Pod Filling / Seed Development",
+          "kc": 1.05,
+          "duration_days": 25,
+          "description": "Seed enlargement within pods; sensitive to drought stress."
+        },
+        "maturity": {
+          "label": "Maturity / Harvest",
+          "kc": 0.50,
+          "duration_days": 15,
+          "description": "Leaves turn yellow and drop; natural drying of pods."
+        }
+      },
+      "root_depth_m": 1.0,
+      "depletion_fraction_p": 0.50,
+      "yield_response_ky": 0.85
+    },
+    "maize": {
+      "id": "maize",
+      "name": "Maize (Corn)",
+      "hindi_name": "मक्का",
+      "emoji": "🌽",
+      "stages": {
+        "initial": {
+          "label": "Emergence / Seedling",
+          "kc": 0.35,
+          "duration_days": 20,
+          "description": "Radicle emergence and early whorl development."
+        },
+        "vegetative": {
+          "label": "Knee-High / Stem Elongation",
+          "kc": 0.75,
+          "duration_days": 35,
+          "description": "Vigorous vegetative growth and rapid leaf area accumulation."
+        },
+        "flowering": {
+          "label": "Tasseling / Silking",
+          "kc": 1.20,
+          "duration_days": 25,
+          "description": "Most critical period; drought stress during silking causes barren cobs."
+        },
+        "fruiting": {
+          "label": "Blister / Dough Stage",
+          "kc": 1.10,
+          "duration_days": 25,
+          "description": "Starch deposition into kernels; steady moisture required."
+        },
+        "maturity": {
+          "label": "Black Layer / Maturity",
+          "kc": 0.55,
+          "duration_days": 15,
+          "description": "Physiological maturity achieved; moisture drops for harvesting."
+        }
+      },
+      "root_depth_m": 1.2,
+      "depletion_fraction_p": 0.55,
+      "yield_response_ky": 1.25
+    },
+    "cotton": {
+      "id": "cotton",
+      "name": "Cotton",
+      "hindi_name": "कपास",
+      "emoji": "☁️",
+      "stages": {
+        "initial": {
+          "label": "Germination / Emergence",
+          "kc": 0.35,
+          "duration_days": 30,
+          "description": "Slow early vegetative development with low canopy cover."
+        },
+        "vegetative": {
+          "label": "Square Formation / Branching",
+          "kc": 0.75,
+          "duration_days": 40,
+          "description": "Development of floral buds (squares) and monopodial/sympodial branches."
+        },
+        "flowering": {
+          "label": "Peak Bloom / Flowering",
+          "kc": 1.18,
+          "duration_days": 45,
+          "description": "Maximum water extraction; peak bloom is critical for boll set."
+        },
+        "fruiting": {
+          "label": "Boll Development",
+          "kc": 1.10,
+          "duration_days": 35,
+          "description": "Fiber elongation and secondary cell wall thickening inside bolls."
+        },
+        "maturity": {
+          "label": "Boll Opening / Harvest",
+          "kc": 0.65,
+          "duration_days": 30,
+          "description": "Bolls split open; withhold irrigation to prevent lint discoloration."
+        }
+      },
+      "root_depth_m": 1.4,
+      "depletion_fraction_p": 0.65,
+      "yield_response_ky": 0.85
+    },
+    "tomato": {
+      "id": "tomato",
+      "name": "Tomato",
+      "hindi_name": "टमाटर",
+      "emoji": "🍅",
+      "stages": {
+        "initial": {
+          "label": "Transplanting / Establishment",
+          "kc": 0.60,
+          "duration_days": 25,
+          "description": "Root recovery from nursery transplanting and rosette leaf emergence."
+        },
+        "vegetative": {
+          "label": "Vegetative Growth",
+          "kc": 0.85,
+          "duration_days": 30,
+          "description": "Rapid lateral shoot development and first flower truss appearance."
+        },
+        "flowering": {
+          "label": "Flowering / Fruit Set",
+          "kc": 1.15,
+          "duration_days": 35,
+          "description": "Critical stage; irregular watering causes blossom end rot and flower drop."
+        },
+        "fruiting": {
+          "label": "Fruit Enlargement / Ripening",
+          "kc": 1.10,
+          "duration_days": 35,
+          "description": "High water demand; maintain uniform moisture to prevent fruit cracking."
+        },
+        "maturity": {
+          "label": "Final Harvest Flushes",
+          "kc": 0.80,
+          "duration_days": 20,
+          "description": "Gradual reduction in water requirement as vines exhaust."
+        }
+      },
+      "root_depth_m": 0.8,
+      "depletion_fraction_p": 0.40,
+      "yield_response_ky": 1.05
+    },
+    "chilli": {
+      "id": "chilli",
+      "name": "Chilli (Hot Pepper)",
+      "hindi_name": "हरी / लाल मिर्च",
+      "emoji": "🌶️",
+      "stages": {
+        "initial": {
+          "label": "Seedling / Establishment",
+          "kc": 0.60,
+          "duration_days": 25,
+          "description": "Transplanted nursery saplings establishing fibrous root spread."
+        },
+        "vegetative": {
+          "label": "Branching / Vegetative",
+          "kc": 0.80,
+          "duration_days": 35,
+          "description": "Dichotomous branching and early floral bud initiation."
+        },
+        "flowering": {
+          "label": "Flowering / Fruit Set",
+          "kc": 1.05,
+          "duration_days": 40,
+          "description": "High sensitivity to water stress; drought causes severe flower drop."
+        },
+        "fruiting": {
+          "label": "Green Pod Development",
+          "kc": 1.00,
+          "duration_days": 40,
+          "description": "Pod elongation and capsaicin synthesis; steady irrigation needed."
+        },
+        "maturity": {
+          "label": "Red Ripening / Harvesting",
+          "kc": 0.85,
+          "duration_days": 30,
+          "description": "Multiple picking flushes; reduce moisture between flushes."
+        }
+      },
+      "root_depth_m": 0.7,
+      "depletion_fraction_p": 0.35,
+      "yield_response_ky": 1.00
+    },
+    "capsicum": {
+      "id": "capsicum",
+      "name": "Capsicum (Sweet Bell Pepper)",
+      "hindi_name": "शिमला मिर्च",
+      "emoji": "🫑",
+      "stages": {
+        "initial": {
+          "label": "Establishment",
+          "kc": 0.60,
+          "duration_days": 25,
+          "description": "Young seedling acclimation in open field or polyhouse."
+        },
+        "vegetative": {
+          "label": "Vegetative Canopy Spread",
+          "kc": 0.82,
+          "duration_days": 30,
+          "description": "Rapid stem elongation and foliage building."
+        },
+        "flowering": {
+          "label": "Flowering / Early Setting",
+          "kc": 1.05,
+          "duration_days": 35,
+          "description": "Extremely sensitive to moisture deficits and high heat."
+        },
+        "fruiting": {
+          "label": "Bell Expansion",
+          "kc": 1.05,
+          "duration_days": 35,
+          "description": "Fruit wall thickness development; requires frequent light irrigations."
+        },
+        "maturity": {
+          "label": "Color Break / Harvest",
+          "kc": 0.85,
+          "duration_days": 25,
+          "description": "Green to yellow/red pigment conversion; maintain moderate soil moisture."
+        }
+      },
+      "root_depth_m": 0.8,
+      "depletion_fraction_p": 0.30,
+      "yield_response_ky": 1.10
+    },
+    "pomegranate": {
+      "id": "pomegranate",
+      "name": "Pomegranate (Anar)",
+      "hindi_name": "अनार",
+      "emoji": "🍎",
+      "stages": {
+        "initial": {
+          "label": "Bahar Initiation / New Flush",
+          "kc": 0.50,
+          "duration_days": 30,
+          "description": "Resumption of watering after mandatory stress/withholding period (hasta/ambe/mrig bahar)."
+        },
+        "vegetative": {
+          "label": "Vegetative Flush & Flowering",
+          "kc": 0.70,
+          "duration_days": 45,
+          "description": "Flush of bisexual flowers and rapid shoot growth."
+        },
+        "flowering": {
+          "label": "Fruit Set & Early Development",
+          "kc": 0.80,
+          "duration_days": 50,
+          "description": "Califlower stage to small fruitlet formation; regulated drip is essential."
+        },
+        "fruiting": {
+          "label": "Fruit Growth / Aril Filling",
+          "kc": 0.85,
+          "duration_days": 60,
+          "description": "Maximum water demand; moisture fluctuations cause catastrophic rind cracking."
+        },
+        "maturity": {
+          "label": "Maturity / Harvest",
+          "kc": 0.60,
+          "duration_days": 30,
+          "description": "Sugar accumulation and rind coloring; taper off irrigation."
+        }
+      },
+      "root_depth_m": 1.5,
+      "depletion_fraction_p": 0.50,
+      "yield_response_ky": 0.90
+    },
+    "banana": {
+      "id": "banana",
+      "name": "Banana",
+      "hindi_name": "केला",
+      "emoji": "🍌",
+      "stages": {
+        "initial": {
+          "label": "Planting / Early Shoot",
+          "kc": 1.00,
+          "duration_days": 60,
+          "description": "Sword sucker / tissue culture establishment; high shallow water requirement."
+        },
+        "vegetative": {
+          "label": "Grand Vegetative Growth",
+          "kc": 1.10,
+          "duration_days": 120,
+          "description": "Huge broad leaf area index; high constant transpiration rate."
+        },
+        "flowering": {
+          "label": "Shooting / Inflorescence Emergence",
+          "kc": 1.20,
+          "duration_days": 40,
+          "description": "Bunch emergence from pseudostem; moisture stress reduces hand/finger count."
+        },
+        "fruiting": {
+          "label": "Bunch Development & Filling",
+          "kc": 1.20,
+          "duration_days": 70,
+          "description": "Fingers swell and round off; requires copious uniform drip supply."
+        },
+        "maturity": {
+          "label": "Bunch Harvest",
+          "kc": 1.10,
+          "duration_days": 30,
+          "description": "Ripening harvest flushes prior to ratoon crop preparation."
+        }
+      },
+      "root_depth_m": 0.9,
+      "depletion_fraction_p": 0.35,
+      "yield_response_ky": 1.35
+    },
+    "sugarcane": {
+      "id": "sugarcane",
+      "name": "Sugarcane",
+      "hindi_name": "गन्ना",
+      "emoji": "🎋",
+      "stages": {
+        "initial": {
+          "label": "Germination / Emergence",
+          "kc": 0.40,
+          "duration_days": 35,
+          "description": "Sprouting of setts and early root development."
+        },
+        "vegetative": {
+          "label": "Tillering & Formative Stage",
+          "kc": 0.85,
+          "duration_days": 60,
+          "description": "Tillering and leaf canopy buildup; critical water requirement."
+        },
+        "flowering": {
+          "label": "Grand Growth / Cane Elongation",
+          "kc": 1.25,
+          "duration_days": 120,
+          "description": "Peak internode elongation and maximum water consumption."
+        },
+        "fruiting": {
+          "label": "Yield Formation / Sucrose Accumulation",
+          "kc": 1.15,
+          "duration_days": 70,
+          "description": "Sugar synthesis and stalk thickening."
+        },
+        "maturity": {
+          "label": "Ripening & Harvest",
+          "kc": 0.75,
+          "duration_days": 40,
+          "description": "Taper off water 20-30 days before cutting to concentrate sucrose brix."
+        }
+      },
+      "root_depth_m": 1.5,
+      "depletion_fraction_p": 0.65,
+      "yield_response_ky": 1.20
+    }
+  }
+}

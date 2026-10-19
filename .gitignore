@@ -1,0 +1,72 @@
+# =============================================
+# AgroVision AI — .gitignore
+# =============================================
+
+# ---- Node / Frontend ----
+node_modules/
+dist/
+dist-ssr/
+*.local
+.vite-cache/
+.cache/
+
+# Nested frontend node_modules & dist
+agrovision-crop-recommendation/frontend/node_modules/
+agrovision-crop-recommendation/frontend/dist/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ---- Python / Backend ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.env_local/
+
+# ---- Environment & Secrets (NEVER commit these) ----
+.env
+.env.*
+!.env.example
+*.key
+*.secret
+*.pem
+*.p12
+secrets/
+
+# ---- ML Models (large binary files) ----
+# Uncomment the next line if you do NOT want to track the .pkl model in git
+# agrovision-crop-recommendation/backend/models/*.pkl
+
+# ---- Editor / OS ----
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+Thumbs.db
+
+# ---- Test artifacts ----
+test_advisor_api.py
+test_ai_advisor_full.py
+test_endpoints.py
+agrovision-crop-recommendation/backend/test_api.py

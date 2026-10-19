@@ -1,0 +1,204 @@
+{
+  "schemes": [
+    {
+      "id": "pm-kisan",
+      "name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+      "hindiName": "प्रधानमंत्री किसान सम्मान निधि योजना",
+      "department": "Ministry of Agriculture & Farmers Welfare, Govt of India",
+      "category": "direct-benefit",
+      "benefit": "₹6,000 per year directly transferred to the farmer's bank account in 3 equal installments of ₹2,000 every 4 months.",
+      "benefitHi": "₹6,000 प्रति वर्ष, ₹2,000 की 3 समान किस्तों में सीधे किसान के बैंक खाते में DBT के माध्यम से।",
+      "eligibility": [
+        "All landholding farmer families with cultivable land in their name",
+        "Must have an active bank account linked with Aadhaar and NPCI",
+        "Mandatory e-KYC completion on the PM-KISAN portal",
+        "Institutional landholders and high-income tax payers are excluded"
+      ],
+      "eligibilityHi": [
+        "सभी भूमिधारक किसान परिवार जिनके नाम पर खेती योग्य जमीन है",
+        "आधार और NPCI से जुड़ा सक्रिय बैंक खाता होना आवश्यक",
+        "PM-KISAN पोर्टल पर e-KYC पूरा होना अनिवार्य",
+        "संस्थागत भूमिधारक और आयकरदाता अपात्र हैं"
+      ],
+      "documentsRequired": [
+        "Aadhaar Card",
+        "Land ownership documents (Khasra / Khatauni / Jamabandi)",
+        "Bank passbook with IFSC code",
+        "Mobile number linked to Aadhaar"
+      ],
+      "documentsRequiredHi": [
+        "आधार कार्ड",
+        "जमीन की फर्द / खसरा / खतौनी / जमाबंदी",
+        "बैंक पासबुक (IFSC कोड सहित)",
+        "आधार से लिंक मोबाइल नंबर"
+      ],
+      "howToApply": "Online via pmkisan.gov.in ('New Farmer Registration') or visit the nearest Common Service Centre (CSC) / State Agriculture Department office.",
+      "howToApplyHi": "pmkisan.gov.in पर ऑनलाइन ('नया किसान पंजीकरण') या नजदीकी जन सेवा केंद्र (CSC) / कृषि विभाग कार्यालय पर जाएं।",
+      "officialUrl": "https://pmkisan.gov.in"
+    },
+    {
+      "id": "pmfby",
+      "name": "PMFBY (Pradhan Mantri Fasal Bima Yojana)",
+      "hindiName": "प्रधानमंत्री फसल बीमा योजना",
+      "department": "Department of Agriculture & Farmers Welfare",
+      "category": "insurance",
+      "benefit": "Comprehensive financial protection against crop failure due to non-preventable natural risks (drought, flood, cyclone, unseasonal rain, pests, diseases). Minimum premium: 2% for Kharif crops, 1.5% for Rabi food/oilseed crops, and 5% for commercial/horticultural crops.",
+      "benefitHi": "प्राकृतिक आपदाओं (सूखा, बाढ़, ओलावृष्टि, बेमौसम बारिश, कीट प्रकोप) से फसल नुकसान पर पूर्ण वित्तीय सुरक्षा। न्यूनतम प्रीमियम: खरीफ फसलों पर 2%, रबी फसलों पर 1.5%, और बागवानी फसलों पर 5%।",
+      "eligibility": [
+        "All farmers including sharecroppers and tenant farmers growing notified crops in notified areas",
+        "Available to both loanee (KCC holders) and non-loanee farmers",
+        "Sowing certificate / land possession certificate required"
+      ],
+      "eligibilityHi": [
+        "अधिसूचित क्षेत्रों में अधिसूचित फसलें उगाने वाले सभी किसान (बटाईदार और काश्तकार भी शामिल)",
+        "ऋणी (KCC धारक) और गैर-ऋणी दोनों किसानों के लिए उपलब्ध",
+        "बुवाई प्रमाण पत्र / भूमि स्वामित्व दस्तावेज आवश्यक"
+      ],
+      "documentsRequired": [
+        "Aadhaar Card",
+        "Land Record / Rent Agreement (for tenant farmers)",
+        "Bank account details (linked with Aadhaar)",
+        "Sowing certificate issued by Patwari / Village Agriculture Extension Worker"
+      ],
+      "documentsRequiredHi": [
+        "आधार कार्ड",
+        "जमीन की फर्द / खसरा या पट्टा अनुबंध",
+        "बैंक खाता पासबुक",
+        "पटवारी या कृषि पर्यवेक्षक द्वारा जारी बुवाई प्रमाण पत्र"
+      ],
+      "howToApply": "Apply online at pmfby.gov.in or through bank branches, CSC centers, or the Crop Insurance mobile app within the cut-off date (usually July 31 for Kharif, Dec 31 for Rabi).",
+      "howToApplyHi": "pmfby.gov.in पर ऑनलाइन या बैंक शाखा, CSC केंद्र, या क्रॉप इंश्योरेंस मोबाइल ऐप से कट-ऑफ तिथि से पहले आवेदन करें।",
+      "officialUrl": "https://pmfby.gov.in"
+    },
+    {
+      "id": "soil-health-card",
+      "name": "Soil Health Card Scheme (SHC)",
+      "hindiName": "मृदा स्वास्थ्य कार्ड योजना",
+      "department": "Department of Agriculture, Cooperation & Farmers Welfare",
+      "category": "soil-water",
+      "benefit": "Free soil test report issued every 3 years containing status of 12 critical parameters: N, P, K, S, Zn, Fe, Cu, Mn, Bo, pH, EC, and OC. Provides tailored fertilizer and bio-fertilizer dosage to cut input costs by 15-25%.",
+      "benefitHi": "हर 3 साल में 12 प्रमुख पोषक तत्वों (N, P, K, सल्फर, जिंक, आयरन, कॉपर, मैंगनीज, बोरॉन, pH, EC और जैविक कार्बन) की जांच रिपोर्ट और संतुलित खाद की सटीक सिफारिश, जिससे खेती की लागत 15-25% घटती है।",
+      "eligibility": [
+        "All farmers holding agricultural land in India",
+        "Soil samples collected by local agriculture department officials"
+      ],
+      "eligibilityHi": [
+        "भारत के सभी किसान जिनके पास कृषि भूमि है",
+        "स्थानीय कृषि विभाग के कर्मचारी खेत से नमूना एकत्र करते हैं"
+      ],
+      "documentsRequired": [
+        "Aadhaar Card",
+        "Khasra/Khatauni land record number",
+        "Mobile number"
+      ],
+      "documentsRequiredHi": [
+        "आधार कार्ड",
+        "खसरा / खतौनी नंबर",
+        "मोबाइल नंबर"
+      ],
+      "howToApply": "Visit the local Block Agriculture Office or Krishi Vigyan Kendra (KVK). Soil cards can also be downloaded from soilhealth.dac.gov.in.",
+      "howToApplyHi": "नजदीकी ब्लॉक कृषि कार्यालय या कृषि विज्ञान केंद्र (KVK) से संपर्क करें। कार्ड soilhealth.dac.gov.in से डाउनलोड भी किया जा सकता है।",
+      "officialUrl": "https://soilhealth.dac.gov.in"
+    },
+    {
+      "id": "kcc",
+      "name": "Kisan Credit Card (KCC)",
+      "hindiName": "किसान क्रेडिट कार्ड योजना",
+      "department": "Reserve Bank of India (RBI) & NABARD",
+      "category": "credit",
+      "benefit": "Concessional institutional short-term credit up to ₹3,00,000 at an effective interest rate of only 4% per annum (7% base rate with 3% prompt repayment incentive). Collateral-free loan up to ₹1,60,000.",
+      "benefitHi": "₹3,00,000 तक का रियायती फसली ऋण केवल 4% वार्षिक ब्याज दर पर (समय पर भुगतान करने पर 3% की विशेष छूट)। ₹1,60,000 तक बिना किसी गारंटी/बंधक के ऋण।",
+      "eligibility": [
+        "All individual or joint land-owning farmers",
+        "Tenant farmers, oral lessees, and sharecroppers",
+        "Self Help Groups (SHGs) or Joint Liability Groups (JLGs) of farmers",
+        "Also extended to dairy, animal husbandry, and fisheries farmers"
+      ],
+      "eligibilityHi": [
+        "सभी व्यक्तिगत या संयुक्त भूमिधारक किसान",
+        "बटाईदार और पट्टेदार किसान",
+        "स्वयं सहायता समूह (SHG) या संयुक्त देयता समूह (JLG)",
+        "पशुपालन, डेयरी और मत्स्य पालन करने वाले किसान भी पात्र"
+      ],
+      "documentsRequired": [
+        "Duly filled KCC application form",
+        "Aadhaar Card & PAN Card (or Form 60)",
+        "Land revenue records certified by Patwari",
+        "Passport size photographs"
+      ],
+      "documentsRequiredHi": [
+        "भरा हुआ KCC आवेदन पत्र",
+        "आधार कार्ड और पैन कार्ड",
+        "पटवारी द्वारा सत्यापित जमीन की फर्द / जमाबंदी",
+        "पासपोर्ट साइज फोटो"
+      ],
+      "howToApply": "Submit one-page KCC application to your local commercial bank, RRB, or Cooperative Bank branch, or apply online via State portals or CSC.",
+      "howToApplyHi": "स्थानीय बैंक, ग्रामीण बैंक या सहकारी बैंक में 1-पेज का KCC फॉर्म जमा करें, या CSC पोर्टल से ऑनलाइन आवेदन करें।",
+      "officialUrl": "https://www.myscheme.gov.in/schemes/kcc"
+    },
+    {
+      "id": "pm-kusum",
+      "name": "PM-KUSUM (Solar Agricultural Pumps)",
+      "hindiName": "पीएम-कुसुम सौर ऊर्जा पंप योजना",
+      "department": "Ministry of New and Renewable Energy (MNRE)",
+      "category": "soil-water",
+      "benefit": "Up to 60% subsidy (30% Central Govt + 30% State Govt) for installing standalone off-grid solar water pumps or solarizing existing electric/diesel pumps. 30% available as bank loan, so farmers pay only 10% upfront.",
+      "benefitHi": "खेतों में सोलर पंप लगाने या पुराने डीजल/बिजली पंप को सौर ऊर्जा से चलाने पर 60% तक सब्सिडी (30% केंद्र + 30% राज्य)। 30% बैंक लोन, किसान को सिर्फ 10% लागत देनी होती है।",
+      "eligibility": [
+        "Individual farmers, water user associations, and cooperatives",
+        "Farmers with agricultural land and an existing or proposed water source (borewell, tubewell, canal)"
+      ],
+      "eligibilityHi": [
+        "व्यक्तिगत किसान, जल उपभोक्ता संघ और सहकारी समितियां",
+        "जिनके पास कृषि भूमि और सिंचाई जल स्रोत (बोरवेल/ट्यूबवेल) उपलब्ध है"
+      ],
+      "documentsRequired": [
+        "Aadhaar Card",
+        "Land ownership certificate (Khatauni)",
+        "Bank account passbook",
+        "Proof of water source and electricity connection status"
+      ],
+      "documentsRequiredHi": [
+        "आधार कार्ड",
+        "जमीन की खतौनी",
+        "बैंक पासबुक",
+        "जल स्रोत का प्रमाण (बोरवेल रिपोर्ट)"
+      ],
+      "howToApply": "Apply through your State Renewable Energy Development Agency (e.g. HAREDA in Haryana, PEDA in Punjab) or visit pmkusum.mnre.gov.in.",
+      "howToApplyHi": "राज्य अक्षय ऊर्जा एजेंसी (जैसे हरियाणा में HAREDA) के पोर्टल पर ऑनलाइन या pmkusum.mnre.gov.in पर जाएं।",
+      "officialUrl": "https://pmkusum.mnre.gov.in"
+    },
+    {
+      "id": "smam",
+      "name": "SMAM (Sub-Mission on Agricultural Mechanization)",
+      "hindiName": "कृषि यंत्रीकरण उप-मिशन (मशीनरी सब्सिडी)",
+      "department": "Ministry of Agriculture & Farmers Welfare",
+      "category": "machinery",
+      "benefit": "40% to 50% subsidy on farm implements and equipment including tractors, rotavators, happy seeders, laser land levelers, and power sprayers. Up to 80% subsidy for establishing Custom Hiring Centres (CHC).",
+      "benefitHi": "ट्रैक्टर, रोटावेटर, हैप्पी सीडर, लेजर लैंड लेवलर और पावर स्प्रेयर जैसे कृषि यंत्रों पर 40% से 50% तक सब्सिडी। कस्टम हायरिंग सेंटर (CHC) खोलने पर 80% तक सहायता।",
+      "eligibility": [
+        "Small, marginal, SC/ST, and women farmers receive priority and higher subsidy (50%)",
+        "Other farmers receive 40% subsidy"
+      ],
+      "eligibilityHi": [
+        "लघु, सीमांत, महिला और अनुसूचित जाति/जनजाति किसानों को 50% तक वरीयता सब्सिडी",
+        "अन्य सामान्य किसानों को 40% सब्सिडी"
+      ],
+      "documentsRequired": [
+        "Aadhaar Card",
+        "Land Record (Fard / Khatauni)",
+        "Bank Passbook copy",
+        "Caste certificate (if applicable for enhanced subsidy)"
+      ],
+      "documentsRequiredHi": [
+        "आधार कार्ड",
+        "जमीन की फर्द / खतौनी",
+        "बैंक पासबुक",
+        "जाति प्रमाण पत्र (यदि लागू हो)"
+      ],
+      "howToApply": "Register on the Agrimachinery portal (agrimachinery.nic.in) or apply via State DBT agriculture portals.",
+      "howToApplyHi": "agrimachinery.nic.in पोर्टल पर पंजीकरण करें या राज्य कृषि विभाग के DBT पोर्टल से आवेदन करें।",
+      "officialUrl": "https://agrimachinery.nic.in"
+    }
+  ]
+}

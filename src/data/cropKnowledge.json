@@ -1,0 +1,343 @@
+{
+  "rice": {
+    "id": "rice",
+    "name": "Rice",
+    "hindi_name": "चावल / धान",
+    "botanical_name": "Oryza sativa",
+    "category": "Cereal Grain",
+    "icon": "🌾",
+    "banner_color": "emerald",
+    "description": "Rice is a staple cereal crop in India, requiring warm temperatures, high humidity, and abundant standing water during vegetative stages.",
+    "growing_season": "Kharif (June - November) / Boro in certain regions",
+    "duration": "115 - 145 days",
+    "water_requirement": "High (1200 - 1500 mm standing water)",
+    "soil_preference": "Deep clayey loam or silty clay soils with good water-holding capacity and impermeable subsoil.",
+    "ideal_parameters": {
+      "N": { "min": 75, "max": 105, "optimal": 90, "unit": "kg/ha" },
+      "P": { "min": 32, "max": 52, "optimal": 42, "unit": "kg/ha" },
+      "K": { "min": 33, "max": 53, "optimal": 43, "unit": "kg/ha" },
+      "temperature": { "min": 17, "max": 34, "optimal": 22, "unit": "°C" },
+      "humidity": { "min": 70, "max": 90, "optimal": 80, "unit": "%" },
+      "ph": { "min": 5.5, "max": 7.8, "optimal": 6.8, "unit": "pH" },
+      "rainfall": { "min": 150, "max": 260, "optimal": 200, "unit": "mm" }
+    },
+    "care_tips": [
+      "Maintain 3-5 cm water depth during tillering and flowering stages.",
+      "Apply nitrogen in 3 split doses: basal, active tillering, and panicle initiation.",
+      "Incorporate zinc sulphate (25 kg/ha) if deficiency symptoms (khaira disease) appear.",
+      "Drain field 10-14 days before harvest to facilitate uniform grain ripening."
+    ],
+    "harvest_indicators": "Golden yellow panicles with over 80% grains turned straw-colored.",
+    "major_states": "West Bengal, Uttar Pradesh, Punjab, Andhra Pradesh, Odisha, Bihar"
+  },
+  "maize": {
+    "id": "maize",
+    "name": "Maize (Corn)",
+    "hindi_name": "मक्का",
+    "botanical_name": "Zea mays",
+    "category": "Cereal Grain / Fodder",
+    "icon": "🌽",
+    "banner_color": "amber",
+    "description": "Maize is a versatile high-yield crop known as the 'Queen of Cereals', used for food, livestock feed, and industrial starch.",
+    "growing_season": "Kharif, Rabi, and Spring/Zaid",
+    "duration": "90 - 110 days",
+    "water_requirement": "Moderate (500 - 750 mm evenly distributed)",
+    "soil_preference": "Deep, fertile, well-drained sandy loam to silty loam rich in organic matter. Highly sensitive to waterlogging.",
+    "ideal_parameters": {
+      "N": { "min": 68, "max": 95, "optimal": 80, "unit": "kg/ha" },
+      "P": { "min": 30, "max": 50, "optimal": 40, "unit": "kg/ha" },
+      "K": { "min": 12, "max": 30, "optimal": 20, "unit": "kg/ha" },
+      "temperature": { "min": 18, "max": 30, "optimal": 22, "unit": "°C" },
+      "humidity": { "min": 55, "max": 75, "optimal": 65, "unit": "%" },
+      "ph": { "min": 5.5, "max": 7.5, "optimal": 6.2, "unit": "pH" },
+      "rainfall": { "min": 60, "max": 110, "optimal": 80, "unit": "mm" }
+    },
+    "care_tips": [
+      "Ensure furrow irrigation and ridge planting to avoid standing water around stalks.",
+      "Tasseling and silking are critical moisture-sensitive stages.",
+      "Apply phosphorus and potassium as basal doses, split nitrogen at knee-high and tasseling stages.",
+      "Monitor for Fall Armyworm (FAW) early in vegetative growth."
+    ],
+    "harvest_indicators": "Husks turn brownish and dry; kernel moisture drops to around 15-20%.",
+    "major_states": "Karnataka, Madhya Pradesh, Maharashtra, Rajasthan, Bihar"
+  },
+  "chickpea": {
+    "id": "chickpea",
+    "name": "Chickpea (Bengal Gram)",
+    "hindi_name": "चना / छोले",
+    "botanical_name": "Cicer arietinum",
+    "category": "Pulse / Legume",
+    "icon": "🌱",
+    "banner_color": "orange",
+    "description": "Chickpea is India's most important cool-season pulse crop, enriching soil nitrogen through symbiotic Rhizobium root nodules.",
+    "growing_season": "Rabi (October - March)",
+    "duration": "95 - 120 days",
+    "water_requirement": "Low (250 - 400 mm), drought-tolerant",
+    "soil_preference": "Well-drained light to medium black soils and loamy soils with good subsoil drainage.",
+    "ideal_parameters": {
+      "N": { "min": 30, "max": 52, "optimal": 40, "unit": "kg/ha" },
+      "P": { "min": 48, "max": 72, "optimal": 60, "unit": "kg/ha" },
+      "K": { "min": 68, "max": 92, "optimal": 80, "unit": "kg/ha" },
+      "temperature": { "min": 14, "max": 24, "optimal": 18, "unit": "°C" },
+      "humidity": { "min": 10, "max": 30, "optimal": 16, "unit": "%" },
+      "ph": { "min": 4.5, "max": 6.5, "optimal": 5.2, "unit": "pH" },
+      "rainfall": { "min": 45, "max": 80, "optimal": 60, "unit": "mm" }
+    },
+    "care_tips": [
+      "Inoculate seeds with Rhizobium and PSB cultures prior to sowing.",
+      "Avoid heavy nitrogen fertilization as it delays flowering and encourages vegetative excess.",
+      "Provide light irrigation at branching and pod development stages; avoid overwatering at flowering.",
+      "Watch for pod borer (Helicoverpa armigera) and deploy pheromone traps."
+    ],
+    "harvest_indicators": "Leaves turn yellowish and dry; pods rattle when gently shaken.",
+    "major_states": "Madhya Pradesh, Maharashtra, Rajasthan, Uttar Pradesh, Gujarat"
+  },
+  "kidneybeans": {
+    "id": "kidneybeans",
+    "name": "Kidney Beans (Rajma)",
+    "hindi_name": "राजमा",
+    "botanical_name": "Phaseolus vulgaris",
+    "category": "Pulse / Legume",
+    "icon": "🫘",
+    "banner_color": "rose",
+    "description": "Rajma is a high-protein legume crop commonly cultivated in northern hilly and plateau regions in mild cool climates.",
+    "growing_season": "Kharif in hilly regions / Rabi in central plains",
+    "duration": "100 - 125 days",
+    "water_requirement": "Moderate (400 - 600 mm)",
+    "soil_preference": "Rich, well-aerated sandy loam or alluvial soils with high organic matter content.",
+    "ideal_parameters": {
+      "N": { "min": 10, "max": 32, "optimal": 20, "unit": "kg/ha" },
+      "P": { "min": 48, "max": 72, "optimal": 60, "unit": "kg/ha" },
+      "K": { "min": 10, "max": 32, "optimal": 20, "unit": "kg/ha" },
+      "temperature": { "min": 15, "max": 25, "optimal": 20, "unit": "°C" },
+      "humidity": { "min": 12, "max": 32, "optimal": 20, "unit": "%" },
+      "ph": { "min": 5.0, "max": 6.5, "optimal": 5.6, "unit": "pH" },
+      "rainfall": { "min": 80, "max": 125, "optimal": 100, "unit": "mm" }
+    },
+    "care_tips": [
+      "Unlike other pulses, kidney beans fix less atmospheric nitrogen; provide adequate starter nitrogen.",
+      "Stake trailing varieties or choose bush types for mechanized field maintenance.",
+      "Keep soil moist but never stagnant; susceptible to root rot in poorly drained soils.",
+      "Harvest promptly when pods lose green color to avoid shattering."
+    ],
+    "harvest_indicators": "Pods turn yellow-straw colored and seeds harden inside the pods.",
+    "major_states": "Jammu & Kashmir, Himachal Pradesh, Uttarakhand, Maharashtra"
+  },
+  "pigeonpeas": {
+    "id": "pigeonpeas",
+    "name": "Pigeon Peas (Arhar / Toor)",
+    "hindi_name": "अरहर / तुअर",
+    "botanical_name": "Cajanus cajan",
+    "category": "Pulse / Legume",
+    "icon": "🌿",
+    "banner_color": "yellow",
+    "description": "Pigeon pea is an essential source of protein in Indian diet (dal). It is drought-hardy and possesses a deep taproot that breaks hard subsoil layers.",
+    "growing_season": "Kharif (June/July - December/January)",
+    "duration": "140 - 180 days (medium to long duration)",
+    "water_requirement": "Moderate (600 - 800 mm)",
+    "soil_preference": "Deep, well-drained loam or clay loam soils. Sensitive to saline and alkaline conditions.",
+    "ideal_parameters": {
+      "N": { "min": 10, "max": 32, "optimal": 20, "unit": "kg/ha" },
+      "P": { "min": 48, "max": 72, "optimal": 60, "unit": "kg/ha" },
+      "K": { "min": 10, "max": 32, "optimal": 20, "unit": "kg/ha" },
+      "temperature": { "min": 22, "max": 33, "optimal": 27, "unit": "°C" },
+      "humidity": { "min": 38, "max": 58, "optimal": 48, "unit": "%" },
+      "ph": { "min": 5.0, "max": 6.5, "optimal": 5.7, "unit": "pH" },
+      "rainfall": { "min": 95, "max": 145, "optimal": 120, "unit": "mm" }
+    },
+    "care_tips": [
+      "Excellent companion for intercropping with cotton, sorghum, or soybean.",
+      "Provide protective irrigation during flowering and pod development if dry spell exceeds 15 days.",
+      "Pruning or nipping of terminal shoots around 40-50 days promotes profuse lateral branching.",
+      "Apply sulfur-containing single superphosphate (SSP) to improve protein synthesis."
+    ],
+    "harvest_indicators": "75-80% pods turn brown and dry on the plants.",
+    "major_states": "Maharashtra, Karnataka, Madhya Pradesh, Uttar Pradesh, Gujarat"
+  },
+  "mothbeans": {
+    "id": "mothbeans",
+    "name": "Moth Beans (Matki)",
+    "hindi_name": "मोठ / मटकी",
+    "botanical_name": "Vigna aconitifolia",
+    "category": "Arid Pulse / Legume",
+    "icon": "🪴",
+    "banner_color": "stone",
+    "description": "Moth bean is an exceptionally drought-tolerant arid legume that thrives in low rainfall and sandy soil, preventing soil erosion.",
+    "growing_season": "Kharif (Rainy season)",
+    "duration": "75 - 90 days",
+    "water_requirement": "Low (200 - 350 mm)",
+    "soil_preference": "Light sandy to sandy loam soils with rapid drainage.",
+    "ideal_parameters": {
+      "N": { "min": 10, "max": 32, "optimal": 20, "unit": "kg/ha" },
+      "P": { "min": 28, "max": 52, "optimal": 40, "unit": "kg/ha" },
+      "K": { "min": 10, "max": 32, "optimal": 20, "unit": "kg/ha" },
+      "temperature": { "min": 24, "max": 34, "optimal": 28, "unit": "°C" },
+      "humidity": { "min": 38, "max": 62, "optimal": 50, "unit": "%" },
+      "ph": { "min": 5.5, "max": 7.5, "optimal": 6.5, "unit": "pH" },
+      "rainfall": { "min": 35, "max": 70, "optimal": 50, "unit": "mm" }
+    },
+    "care_tips": [
+      "Ideal crop for rainfed arid and semi-arid conditions where other crops fail.",
+      "Spreads dense vegetative cover that acts as a live mulch conserving soil moisture.",
+      "Requires minimal synthetic fertilizers due to robust nitrogen-fixing nodulation.",
+      "Harvest early in the morning when pods have dew moisture to minimize shattering loss."
+    ],
+    "harvest_indicators": "Pods change from yellow-green to brown; plants begin shedding leaves.",
+    "major_states": "Rajasthan, Gujarat, Haryana, Maharashtra"
+  },
+  "mungbean": {
+    "id": "mungbean",
+    "name": "Mung Bean (Green Gram)",
+    "hindi_name": "मूंग दाल",
+    "botanical_name": "Vigna radiata",
+    "category": "Pulse / Legume",
+    "icon": "🟢",
+    "banner_color": "lime",
+    "description": "Mung bean is a fast-maturing pulse that fits well into crop rotations, enriching soil organic matter and nitrogen.",
+    "growing_season": "Kharif, Spring, and Zaid (Summer)",
+    "duration": "60 - 75 days",
+    "water_requirement": "Low to Moderate (350 - 500 mm)",
+    "soil_preference": "Well-drained fertile loam or sandy loam. Avoid saline and waterlogged ground.",
+    "ideal_parameters": {
+      "N": { "min": 10, "max": 32, "optimal": 20, "unit": "kg/ha" },
+      "P": { "min": 28, "max": 52, "optimal": 40, "unit": "kg/ha" },
+      "K": { "min": 10, "max": 32, "optimal": 20, "unit": "kg/ha" },
+      "temperature": { "min": 23, "max": 35, "optimal": 28, "unit": "°C" },
+      "humidity": { "min": 72, "max": 95, "optimal": 85, "unit": "%" },
+      "ph": { "min": 5.5, "max": 7.5, "optimal": 6.5, "unit": "pH" },
+      "rainfall": { "min": 35, "max": 70, "optimal": 50, "unit": "mm" }
+    },
+    "care_tips": [
+      "Seed treatment with Thiram and Rhizobium increases germination vigor.",
+      "Give one light irrigation at pre-flowering and one at early pod filling.",
+      "Control yellow mosaic virus (YMV) by managing whitefly vector populations.",
+      "Pick mature black pods in 2-3 flushes if indeterminate variety is grown."
+    ],
+    "harvest_indicators": "80% of pods turn dark brown to blackish.",
+    "major_states": "Rajasthan, Madhya Pradesh, Maharashtra, Karnataka, Tamil Nadu"
+  },
+  "blackgram": {
+    "id": "blackgram",
+    "name": "Black Gram (Urad)",
+    "hindi_name": "उड़द दाल",
+    "botanical_name": "Vigna mungo",
+    "category": "Pulse / Legume",
+    "icon": "⚫",
+    "banner_color": "slate",
+    "description": "Black gram is a nutrient-dense pulse rich in iron, protein, and dietary fiber, often rotated with rice in paddy fallows.",
+    "growing_season": "Kharif, Spring, and Rabi in southern regions",
+    "duration": "70 - 85 days",
+    "water_requirement": "Moderate (400 - 600 mm)",
+    "soil_preference": "Heavy soils, loamy or clayey soils with adequate moisture retention capacity.",
+    "ideal_parameters": {
+      "N": { "min": 28, "max": 52, "optimal": 40, "unit": "kg/ha" },
+      "P": { "min": 48, "max": 72, "optimal": 60, "unit": "kg/ha" },
+      "K": { "min": 10, "max": 32, "optimal": 20, "unit": "kg/ha" },
+      "temperature": { "min": 22, "max": 32, "optimal": 27, "unit": "°C" },
+      "humidity": { "min": 52, "max": 78, "optimal": 65, "unit": "%" },
+      "ph": { "min": 6.0, "max": 7.8, "optimal": 7.0, "unit": "pH" },
+      "rainfall": { "min": 52, "max": 90, "optimal": 70, "unit": "mm" }
+    },
+    "care_tips": [
+      "Broadcasting in standing rice crop prior to harvest (relay cropping) saves tillage costs.",
+      "Apply 2% DAP foliar spray at flowering stage to enhance pod set.",
+      "Keep field free from weeds for the first 30 days.",
+      "Harvest whole plants when leaves fall and pods become dry and black."
+    ],
+    "harvest_indicators": "Pods turn glossy black and brittle.",
+    "major_states": "Madhya Pradesh, Uttar Pradesh, Andhra Pradesh, Tamil Nadu, Maharashtra"
+  },
+  "lentil": {
+    "id": "lentil",
+    "name": "Lentil (Masoor)",
+    "hindi_name": "मसूर दाल",
+    "botanical_name": "Lens culinaris",
+    "category": "Pulse / Legume",
+    "icon": "🍲",
+    "banner_color": "amber",
+    "description": "Lentil is a resilient winter legume cultivated widely across the Gangetic plains, requiring cool growth conditions.",
+    "growing_season": "Rabi (October/November - March)",
+    "duration": "100 - 130 days",
+    "water_requirement": "Low (200 - 350 mm)",
+    "soil_preference": "Alluvial, sandy loam to clay loam soils with neutral to slightly acidic pH.",
+    "ideal_parameters": {
+      "N": { "min": 10, "max": 32, "optimal": 20, "unit": "kg/ha" },
+      "P": { "min": 48, "max": 72, "optimal": 60, "unit": "kg/ha" },
+      "K": { "min": 10, "max": 32, "optimal": 20, "unit": "kg/ha" },
+      "temperature": { "min": 18, "max": 29, "optimal": 24, "unit": "°C" },
+      "humidity": { "min": 48, "max": 72, "optimal": 60, "unit": "%" },
+      "ph": { "min": 5.5, "max": 7.5, "optimal": 6.5, "unit": "pH" },
+      "rainfall": { "min": 35, "max": 70, "optimal": 50, "unit": "mm" }
+    },
+    "care_tips": [
+      "Perform seed treatment with biofertilizers and fungicide to curb collar rot.",
+      "Tolerates moderate dry spells; one irrigation at flowering is sufficient if rain is deficient.",
+      "Sensitive to waterlogging, ensure beds have mild drainage incline.",
+      "Harvest promptly when bottom pods dry to avoid grain shattering."
+    ],
+    "harvest_indicators": "Leaves turn yellow, lower pods dry to yellowish brown.",
+    "major_states": "Madhya Pradesh, Uttar Pradesh, Bihar, West Bengal, Rajasthan"
+  },
+  "pomegranate": {
+    "id": "pomegranate",
+    "name": "Pomegranate (Anar)",
+    "hindi_name": "अनार",
+    "botanical_name": "Punica granatum",
+    "category": "Horticulture / Fruit Tree",
+    "icon": "🍎",
+    "banner_color": "red",
+    "description": "Pomegranate is a commercially valuable fruit crop that thrives in semi-arid environments with hot dry summers and mild winters.",
+    "growing_season": "Perennial (Bahar flowering: Ambe, Mrig, or Hasta bahar)",
+    "duration": "Perennial (Fruits mature 130 - 160 days after flowering)",
+    "water_requirement": "Moderate (500 - 800 mm drip irrigation recommended)",
+    "soil_preference": "Well-drained deep loamy soil or light alluvial soil with good aeration. Can tolerate slightly alkaline and rocky ground.",
+    "ideal_parameters": {
+      "N": { "min": 10, "max": 32, "optimal": 20, "unit": "kg/ha" },
+      "P": { "min": 10, "max": 28, "optimal": 18, "unit": "kg/ha" },
+      "K": { "min": 28, "max": 52, "optimal": 40, "unit": "kg/ha" },
+      "temperature": { "min": 15, "max": 26, "optimal": 20, "unit": "°C" },
+      "humidity": { "min": 78, "max": 98, "optimal": 90, "unit": "%" },
+      "ph": { "min": 5.0, "max": 7.2, "optimal": 6.0, "unit": "pH" },
+      "rainfall": { "min": 85, "max": 135, "optimal": 110, "unit": "mm" }
+    },
+    "care_tips": [
+      "Prune crisscross and dead branches annually to maintain open center canopy for sunlight penetration.",
+      "Regulate watering strictly during fruit enlargement to prevent fruit cracking.",
+      "Apply organic manure (FYM 20-30 kg/plant) along with micronutrients (Boron, Zinc).",
+      "Monitor for bacterial blight (Teliya) and fruit borer; bag developing fruits."
+    ],
+    "harvest_indicators": "Rind turns characteristic reddish-yellow, fruits produce metallic sound when tapped.",
+    "major_states": "Maharashtra, Gujarat, Karnataka, Andhra Pradesh, Rajasthan"
+  },
+  "banana": {
+    "id": "banana",
+    "name": "Banana",
+    "hindi_name": "केला",
+    "botanical_name": "Musa acuminata / Musa balbisiana",
+    "category": "Horticulture / Fruit Crop",
+    "icon": "🍌",
+    "banner_color": "yellow",
+    "description": "Banana is a high-volume, rapid-growing tropical fruit demanding abundant nutrients, ample moisture, and sheltered warm conditions.",
+    "growing_season": "Perennial (Tissue culture planted year-round)",
+    "duration": "11 - 14 months per crop cycle",
+    "water_requirement": "Very High (1500 - 2000 mm regular drip supply)",
+    "soil_preference": "Deep, fertile, moisture-retentive alluvial or clayey loam rich in potassium and organic matter.",
+    "ideal_parameters": {
+      "N": { "min": 85, "max": 120, "optimal": 100, "unit": "kg/ha" },
+      "P": { "min": 60, "max": 90, "optimal": 75, "unit": "kg/ha" },
+      "K": { "min": 38, "max": 65, "optimal": 50, "unit": "kg/ha" },
+      "temperature": { "min": 22, "max": 33, "optimal": 27, "unit": "°C" },
+      "humidity": { "min": 70, "max": 92, "optimal": 80, "unit": "%" },
+      "ph": { "min": 5.2, "max": 7.2, "optimal": 6.0, "unit": "pH" },
+      "rainfall": { "min": 75, "max": 125, "optimal": 100, "unit": "mm" }
+    },
+    "care_tips": [
+      "Provide propping (bamboo or rope support) as bunches emerge to prevent lodging from wind.",
+      "Desuckering: remove unwanted daughter suckers regularly, keeping one follower sucker for ratoon.",
+      "Heavy potassium feeder: apply muriate of potash (MOP) in split doses during bunch formation.",
+      "Cover emerging bunches with perforated polythene sleeves to protect skin quality."
+    ],
+    "harvest_indicators": "Angles of banana fingers become rounded and top leaves turn dry.",
+    "major_states": "Andhra Pradesh, Maharashtra, Gujarat, Tamil Nadu, Karnataka, Uttar Pradesh"
+  }
+}
